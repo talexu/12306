@@ -1,4 +1,4 @@
-FROM python:2.7.15
+FROM joyzoursky/python-chromedriver:3.7-selenium
 WORKDIR /usr/src/app
 ADD . /usr/src/app
 

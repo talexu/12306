@@ -7,18 +7,18 @@
 TICKET_TYPE = 2
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
-STATION_DATES = []
+STATION_DATES = ["2019-10-20"]
 
 # 填入需要购买的车次(list)，"G1353"
 # 修改车次填入规则，注：(以前设置的车次逻辑不变)，如果车次填入为空，那么就是当日乘车所有车次都纳入筛选返回
 # 不填车次是整个list为空才算，如果不是为空，依然会判断车次的，这种是错误的写法 [""], 正确的写法 []
-STATION_TRAINS = []
+STATION_TRAINS = ["D21"]
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = ""
+FROM_STATION = "北京"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = ""
+TO_STATION = "秦皇岛"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -30,7 +30,7 @@ TO_STATION = ""
 # "硬座",
 # "无座",
 # "动卧",
-SET_TYPE = []
+SET_TYPE = ["一等座"]
 # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
 # bool
 IS_MORE_TICKET = True
@@ -38,10 +38,10 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # - "张三"
 # - "李四"
-TICKET_PEOPLES = []
+TICKET_PEOPLES = ["许雲龙"]
 
 # 12306登录账号
-USER = ""
+USER = "bjutales"
 PWD = ""
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
@@ -69,11 +69,11 @@ AUTO_CODE_TYPE = 2
 #  host: "smtp.qq.com"
 EMAIL_CONF = {
     "IS_MAIL": True,
-    "email": "",
-    "notice_email_list": "",
-    "username": "",
+    "email": "bjutales@163.com",
+    "notice_email_list": "bjutales@hotmail.com",
+    "username": "bjutales@163.com",
     "password": "",
-    "host": "",
+    "host": "smtp.163.com",
 }
 
 # 是否开启 server酱 微信提醒， 使用前需要前往 http://sc.ftqq.com/3.version 扫码绑定获取 SECRET 并关注获得抢票结果通知的公众号
@@ -107,7 +107,7 @@ OPEN_TIME = "13:00:00"
 COOKIE_TYPE = 1
 # 如果COOKIE_TYPE=1，则需配置chromeDriver路径,下载地址http://chromedriver.storage.googleapis.com/index.html
 # chromedriver配置版本只要和chrome的大版本匹配就行
-CHROME_PATH = ""
+CHROME_PATH = "/usr/local/bin/chromedriver"
 
 # 1=>为一直随机ua,2->只启动的时候随机一次ua
 RANDOM_AGENT = 2
